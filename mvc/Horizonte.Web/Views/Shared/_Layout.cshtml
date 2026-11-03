@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] | Horizonte Viagens</title>
+    <link rel="icon" href="/horizonte/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="/horizonte/styles.css" />
+    <link rel="stylesheet" href="/horizonte/product.css" />
+</head>
+<body data-initial-route="@ViewData["Route"]">
+    <a class="skip" href="#main-content">Pular para o conteúdo</a>
+    @RenderBody()
+    <dialog id="modal" aria-labelledby="modal-title"></dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/horizonte/app.js"></script>
+</body>
+</html>
